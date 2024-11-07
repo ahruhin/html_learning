@@ -1,0 +1,54 @@
+    selector {
+        position: relative;
+        z-index: 1;
+    }
+
+    selector::after {
+        position: absolute;
+        top: 0px;
+        left: -20px;
+        content: "";
+        height: 100px;
+        width: calc(100% + 40px);
+        background: url("https://govaloansstg.wpengine.com/wp-content/uploads/2024/10/gn69p2duwoom2m255j3.svg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: bottom;
+        z-index: -1;
+    }
+
+
+    @media only screen and (max-width: 767px) {
+        selector::after {
+            left: -15px;
+            height: 53px;
+            width: calc(100% + 30px);
+        }
+    }
+
+
+
+/* button */
+
+.btn_animation_effect  a {
+    position: relative;
+    transition: 0.2s all ease-in-out;
+}
+
+.btn_animation_effect a .elementor-button-icon {
+    position: absolute;
+    right: 12px;
+    transform: translateX(-15px);
+    transition: 0.2s all ease-in-out;
+    opacity: 0;
+}
+
+.btn_animation_effect a:hover {
+    padding-left: 15px !important;
+    padding-right: 35px !important;
+}
+
+.btn_animation_effect a:hover .elementor-button-icon {
+    transform: translateX(0px);
+    opacity: 1;
+}
